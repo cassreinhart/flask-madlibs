@@ -1,0 +1,67 @@
+/* #cfc3db
+#fadf75
+#f01fa4
+#f9bbfa
+#b8d487
+#90d3e0
+#e6602c */
+
+body {
+    background-color: #cfc3db;
+}
+
+h1 {
+    font-family: 'Atma', cursive;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Special Elite', cursive;
+    /* need mad libs font in here */
+    padding: 1rem;
+    text-align: center;
+}
+p, a {
+    font-family: 'Atma', cursive;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Special Elite', cursive;
+    padding: 2rem;
+}
+nav {
+    background-color: #90d3e0;
+    color: #f01fa4;
+    margin: 0px;
+    padding: 1rem 2rem;
+}
+a {
+    margin: 0px;
+    padding: 1rem 2rem;
+}
+a:hover {
+    background-color: #b8d487;
+    color: #e6602c;
+}
+main {
+    background-color: #f9bbfa;
+}
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+input, button {
+    border: none;
+    border-radius: 3px;
+}
+label {
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+input {
+    background-color: #fadf75;
+    color: #f01fa4;
+    padding: .5rem;
+}
+button {
+    background-color: black;
+    color: white;
+}

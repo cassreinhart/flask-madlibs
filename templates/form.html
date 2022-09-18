@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Madlibs V1{% endblock %}
+{% block page_name %}Madlibs{% endblock %}
+
+{% block content %}
+    <h1>Make Madlibs:</h1>
+    <form action="/story">
+        {% for prompt in prompts %}
+            <label for="{{prompt}}">{{prompt}}:</label>
+            <input type="text" name="{{prompt}}" placeholder="{{prompt}}" id="">
+        {% endfor %}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

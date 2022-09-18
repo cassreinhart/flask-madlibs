@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Madlibs 2{% endblock %}
+{% block page_name %}Choose Your Own Story{% endblock %}
+
+{% block content %}
+    <h1>Madlibs V2</h1>
+    <label for="dropdown">Story Template</label>
+    <select name="" id="">
+   {% for story in stories %}
+        <option value="story">{{story}}</option>
+   {% endfor %}
+    </select>
+{% endblock %}
