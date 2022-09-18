@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 from flask_debugtoolbar import DebugToolbarExtension
-from stories import story
+from stories import story, storyList
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] ='madlibzarekewl1995'
@@ -19,8 +19,8 @@ def show_story():
 
 # storyList = [fantasy, camp, weird_news]
 
-# @app.route('/madlibs-2')
-# def show_dropdown():
-    
-#     stories = story.getStory(storyList)
-#     return render_template('menu.html', stories=storiez)
+@app.route('/madlibs-2')
+def show_dropdown():
+    print(storyList[0])
+    stories = story.getStory(storyList)
+    return render_template('menu.html', stories=stories)
